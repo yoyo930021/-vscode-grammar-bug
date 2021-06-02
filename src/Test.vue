@@ -1,13 +1,14 @@
 <template>
-  <div>
-    {{ fo }}
+  <div :id="arg" v-if="typeof blah !== 'undefined'">
+    <p :test="typeof junk === 'string'" :class="stuff && 'moreStuff'" 
+    @click="doAThing()">
+      {{ junk }}
+    </p>
+    <div id="">
+
+    </div>
+    <div>
+
+    </div>
   </div>
 </template>
-
-<script>
-import * as _ from 'lodash'
-
-export default {
-  props: ['foo', 'bar']
-}
-</script>
